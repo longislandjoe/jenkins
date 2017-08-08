@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'echo "Fail!"; exit 2'
+                sh 'echo "Fail!"; exit 3'
             }
         }
     }
