@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker 'maven:3.3.9' }
+    agent { docker 'php' }
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                sh 'php --version'
             }
         }
     }
