@@ -1,9 +1,21 @@
 pipeline {
-    agent { docker 'php' }
+    agent any 
+
     stages {
-        stage('build') {
+        stage('Build') { 
+            steps { 
+                sh 'ls' 
+            }
+        }
+        stage('Test'){
             steps {
-                sh 'php --version'
+                sh 'ls -lart'
+                
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'ls -l'
             }
         }
     }
