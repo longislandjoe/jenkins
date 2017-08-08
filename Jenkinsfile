@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                sh 'ls' 
+                sh 'curl http://www.google.com' 
             }
         }
         stage('Test'){
