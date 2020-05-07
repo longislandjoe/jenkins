@@ -15,6 +15,4 @@
 | -------- | ------------ |
 | Header | Title |
 | Paragraph | Text |
-
-...
-![alt myimage](image.jpg)
+|![alt myimage](image.jpg)| |
