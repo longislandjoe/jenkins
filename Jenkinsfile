@@ -4,20 +4,23 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'ls'
+         //       sh 'ls'
+                echo "Build"
             }
         }
         
         stage('Sanity check') {
             steps {
               //  input "Does the staging environment look ok?"
-                sh 'ls'
+             //   sh 'ls'
+                echo "Sanity"
             }
         }
         
         stage('Test') {
             steps {
-                sh 'printenv'
+          //      sh 'printenv'
+                echo "Test"
             }
         }        
         
